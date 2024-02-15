@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:57:50" hostname="LAPTOP-C5ATL8TE" time="0.995">
+<testsuite name="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-02-15T07:20:50" hostname="LAPTOP-C5ATL8TE" time="0.986">
   <properties/>
-  <testcase name="testEntityToResponseModel()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.766"/>
-  <testcase name="findAppointmentByAppointmentId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.103"/>
-  <testcase name="findAllAppointmentsByStatus_shouldReturnList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.025"/>
-  <testcase name="testEntityToResponseModelList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.017"/>
-  <testcase name="findAllAppointmentsByNonExistentCustomerId_thenReturnEmptyList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.021"/>
-  <testcase name="testRequestModelToEntity()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.013"/>
-  <testcase name="findAllAppointmentsByCustomerId_shouldReturnList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.019"/>
-  <testcase name="findAppointmentByInvalidAppointmentId_thenReturnNull()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.018"/>
-  <system-out><![CDATA[2024-02-14T23:57:48.793-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest]: AppointmentRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:57:48.889-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest
+  <testcase name="testEntityToResponseModel()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.724"/>
+  <testcase name="findAppointmentByAppointmentId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.099"/>
+  <testcase name="findAllAppointmentsByStatus_shouldReturnList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.029"/>
+  <testcase name="testEntityToResponseModelList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.022"/>
+  <testcase name="findAllAppointmentsByNonExistentCustomerId_thenReturnEmptyList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.023"/>
+  <testcase name="testRequestModelToEntity()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.017"/>
+  <testcase name="findAllAppointmentsByCustomerId_shouldReturnList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.025"/>
+  <testcase name="findAppointmentByInvalidAppointmentId_thenReturnNull()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest" time="0.027"/>
+  <system-out><![CDATA[2024-02-15T02:20:47.447-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest]: AppointmentRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:20:47.550-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.datalayer.AppointmentRepositoryTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,7 +20,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.5)
 
-2024-02-14T23:57:48.995-05:00  WARN 37760 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2024-02-15T02:20:47.672-05:00  WARN 20292 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -29,57 +29,41 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2024-02-14T23:57:48.997-05:00  INFO 37760 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Starting AppointmentRepositoryTest using Java 17.0.6 with PID 37760 (started by Mvacc in C:\Users\Mvacc\OneDrive\Documents\Semester8\FINALPROJ\ateliermecanique-ws\ateliermecanique-ws)
-2024-02-14T23:57:48.997-05:00 DEBUG 37760 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Running with Spring Boot v3.1.5, Spring v6.0.13
-2024-02-14T23:57:48.998-05:00  INFO 37760 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
-2024-02-14T23:57:49.288-05:00  INFO 37760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-14T23:57:49.372-05:00  INFO 37760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 6 JPA repository interfaces.
-2024-02-14T23:57:49.405-05:00  INFO 37760 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2024-02-14T23:57:49.489-05:00  INFO 37760 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:c3dad79d-5724-4b8b-a83f-61b3592ef763;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2024-02-14T23:57:49.554-05:00  INFO 37760 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-14T23:57:49.584-05:00  INFO 37760 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-14T23:57:49.845-05:00  INFO 37760 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-14T23:57:49.845-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists appointments cascade 
-Hibernate: drop table if exists appointments cascade 
-2024-02-14T23:57:49.847-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists invoices cascade 
-Hibernate: drop table if exists invoices cascade 
-2024-02-14T23:57:49.847-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists reviews cascade 
-Hibernate: drop table if exists reviews cascade 
-2024-02-14T23:57:49.847-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists roles cascade 
-Hibernate: drop table if exists roles cascade 
-2024-02-14T23:57:49.848-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists user_roles cascade 
-Hibernate: drop table if exists user_roles cascade 
-2024-02-14T23:57:49.848-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists users cascade 
-Hibernate: drop table if exists users cascade 
-2024-02-14T23:57:49.848-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists vehicles cascade 
-Hibernate: drop table if exists vehicles cascade 
-2024-02-14T23:57:49.849-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table appointments (id integer generated by default as identity, appointment_date timestamp(6), appointment_id varchar(255), comments varchar(255), services varchar(255), status varchar(255) check (status in ('PENDING','CONFIRMED','COMPLETED','CANCELLED')), user_id varchar(255), vehicle_id varchar(255), primary key (id))
-Hibernate: create table appointments (id integer generated by default as identity, appointment_date timestamp(6), appointment_id varchar(255), comments varchar(255), services varchar(255), status varchar(255) check (status in ('PENDING','CONFIRMED','COMPLETED','CANCELLED')), user_id varchar(255), vehicle_id varchar(255), primary key (id))
-2024-02-14T23:57:49.852-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table invoices (id integer generated by default as identity, sum_of_services float(53), invoice_date timestamp(6), appointment_id varchar(255), invoice_id varchar(255), mechanic_notes varchar(255), user_id varchar(255), primary key (id))
-Hibernate: create table invoices (id integer generated by default as identity, sum_of_services float(53), invoice_date timestamp(6), appointment_id varchar(255), invoice_id varchar(255), mechanic_notes varchar(255), user_id varchar(255), primary key (id))
-2024-02-14T23:57:49.854-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id integer generated by default as identity, rating float(53), review_date timestamp(6), appointment_id varchar(255), comment varchar(255), mechanic_reply varchar(255), review_id varchar(255), user_id varchar(255), primary key (id))
-Hibernate: create table reviews (id integer generated by default as identity, rating float(53), review_date timestamp(6), appointment_id varchar(255), comment varchar(255), mechanic_reply varchar(255), review_id varchar(255), user_id varchar(255), primary key (id))
-2024-02-14T23:57:49.856-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table roles (id integer generated by default as identity, name varchar(20) check (name in ('ROLE_CUSTOMER','ROLE_ADMIN')), primary key (id))
+2024-02-15T02:20:47.675-05:00  INFO 20292 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Starting AppointmentRepositoryTest using Java 17.0.6 with PID 20292 (started by Mvacc in C:\Users\Mvacc\OneDrive\Documents\Semester8\FINALPROJ\TEST\ateliermecanique-ws)
+2024-02-15T02:20:47.675-05:00 DEBUG 20292 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-02-15T02:20:47.676-05:00  INFO 20292 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T02:20:47.919-05:00  INFO 20292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T02:20:48.012-05:00  INFO 20292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 6 JPA repository interfaces.
+2024-02-15T02:20:48.059-05:00  INFO 20292 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-02-15T02:20:48.151-05:00  INFO 20292 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:0f00b69f-b76a-4b7c-ae7f-e7ee01b2dc1d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-02-15T02:20:49.057-05:00  INFO 20292 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T02:20:49.078-05:00  INFO 20292 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T02:20:49.525-05:00  INFO 20292 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15T02:20:49.623-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table appointments (id integer generated by default as identity, appointment_date timestamp(6), appointment_id varchar(255), comments varchar(255), user_id varchar(255), services varchar(255), status varchar(255) check (status in ('PENDING','CONFIRMED','COMPLETED','CANCELLED')), vehicle_id varchar(255), primary key (id))
+Hibernate: create table appointments (id integer generated by default as identity, appointment_date timestamp(6), appointment_id varchar(255), comments varchar(255), user_id varchar(255), services varchar(255), status varchar(255) check (status in ('PENDING','CONFIRMED','COMPLETED','CANCELLED')), vehicle_id varchar(255), primary key (id))
+2024-02-15T02:20:49.656-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table invoices (id integer generated by default as identity, appointment_id varchar(255), user_id varchar(255), invoice_id varchar(255), invoice_date timestamp(6), mechanic_notes varchar(255), sum_of_services float(53), primary key (id))
+Hibernate: create table invoices (id integer generated by default as identity, appointment_id varchar(255), user_id varchar(255), invoice_id varchar(255), invoice_date timestamp(6), mechanic_notes varchar(255), sum_of_services float(53), primary key (id))
+2024-02-15T02:20:49.659-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id integer generated by default as identity, appointment_id varchar(255), comment varchar(255), user_id varchar(255), mechanic_reply varchar(255), rating float(53), review_date timestamp(6), review_id varchar(255), primary key (id))
+Hibernate: create table reviews (id integer generated by default as identity, appointment_id varchar(255), comment varchar(255), user_id varchar(255), mechanic_reply varchar(255), rating float(53), review_date timestamp(6), review_id varchar(255), primary key (id))
+2024-02-15T02:20:49.663-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table roles (id integer generated by default as identity, name varchar(20) check (name in ('ROLE_CUSTOMER','ROLE_ADMIN')), primary key (id))
 Hibernate: create table roles (id integer generated by default as identity, name varchar(20) check (name in ('ROLE_CUSTOMER','ROLE_ADMIN')), primary key (id))
-2024-02-14T23:57:49.857-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table user_roles (role_id integer not null, user_id integer not null, primary key (role_id, user_id))
-Hibernate: create table user_roles (role_id integer not null, user_id integer not null, primary key (role_id, user_id))
-2024-02-14T23:57:49.859-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table users (id integer generated by default as identity, first_name varchar(20), phone_number varchar(20), last_name varchar(40), email varchar(50), password varchar(120), picture varchar(200), user_id varchar(255), primary key (id), constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email))
-Hibernate: create table users (id integer generated by default as identity, first_name varchar(20), phone_number varchar(20), last_name varchar(40), email varchar(50), password varchar(120), picture varchar(200), user_id varchar(255), primary key (id), constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email))
-2024-02-14T23:57:49.863-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))
+2024-02-15T02:20:49.666-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id))
+Hibernate: create table user_roles (user_id integer not null, role_id integer not null, primary key (user_id, role_id))
+2024-02-15T02:20:49.672-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table users (id integer generated by default as identity, email varchar(50), first_name varchar(20), last_name varchar(40), password varchar(120), phone_number varchar(20), picture varchar(200), user_id varchar(255), primary key (id))
+Hibernate: create table users (id integer generated by default as identity, email varchar(50), first_name varchar(20), last_name varchar(40), password varchar(120), phone_number varchar(20), picture varchar(200), user_id varchar(255), primary key (id))
+2024-02-15T02:20:49.675-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))
 Hibernate: create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))
-2024-02-14T23:57:49.865-05:00  WARN 37760 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier";]
+2024-02-15T02:20:49.691-05:00  WARN 20292 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier";]
 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier";]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:419) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:315) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
 	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
@@ -221,57 +205,61 @@ create table vehicles (id integer generated by default as identity, make varchar
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	... 131 common frames omitted
+	... 129 common frames omitted
 
-2024-02-14T23:57:49.885-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2024-02-15T02:20:49.738-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : alter table if exists users drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table if exists users drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+2024-02-15T02:20:49.741-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : alter table if exists users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: alter table if exists users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2024-02-15T02:20:49.743-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
 Hibernate: alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
-2024-02-14T23:57:49.888-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users
+2024-02-15T02:20:49.759-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users
 Hibernate: alter table if exists user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users
-2024-02-14T23:57:49.891-05:00  INFO 37760 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-14T23:57:50.192-05:00  INFO 37760 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Started AppointmentRepositoryTest in 1.292 seconds (process running for 20.508)
-2024-02-14T23:57:50.390-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:49.761-05:00  INFO 20292 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T02:20:50.255-05:00  INFO 20292 --- [    Test worker] c.c.a.a.d.AppointmentRepositoryTest      : Started AppointmentRepositoryTest in 2.696 seconds (process running for 50.438)
+2024-02-15T02:20:50.426-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:50.908-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:50.921-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:50.971-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:50.996-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.063-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
+2024-02-15T02:20:51.076-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
-2024-02-14T23:57:51.068-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.084-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.076-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.096-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.081-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.102-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.088-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.status=?
+2024-02-15T02:20:51.109-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.status=?
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.status=?
-2024-02-14T23:57:51.093-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.115-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.104-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.130-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.111-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.141-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.124-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.155-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.130-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
+2024-02-15T02:20:51.163-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
-2024-02-14T23:57:51.136-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.167-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.146-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.178-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.151-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.186-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.159-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.200-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.165-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
+2024-02-15T02:20:51.207-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.user_id=?
-2024-02-14T23:57:51.169-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.213-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
-2024-02-14T23:57:51.181-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:20:51.229-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into appointments (appointment_date,appointment_id,comments,user_id,services,status,vehicle_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:57:51.188-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
+2024-02-15T02:20:51.237-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0 where a1_0.appointment_id=?
-2024-02-14T23:57:51.191-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
+2024-02-15T02:20:51.244-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 Hibernate: select a1_0.id,a1_0.appointment_date,a1_0.appointment_id,a1_0.comments,a1_0.user_id,a1_0.services,a1_0.status,a1_0.vehicle_id from appointments a1_0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

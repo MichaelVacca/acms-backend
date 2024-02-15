@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.092s</div>
+<div class="counter">0.099s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">findAllInvoicesByCustomerId_shouldReturnList()</td>
-<td class="success">0.015s</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,22 +89,22 @@
 </tr>
 <tr>
 <td class="success">findCustomerInvoiceByInvalidInvoiceId_thenReturnNull()</td>
-<td class="success">0.015s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findCustomerInvoiceByInvoiceId_shouldSucceed()</td>
-<td class="success">0.021s</td>
+<td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEntityToResponseModel()</td>
-<td class="success">0.013s</td>
+<td class="success">0.027s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEntityToResponseModelList()</td>
-<td class="success">0.013s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -112,39 +112,39 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-02-14T23:58:02.587-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.datalayer.CustomerInvoiceRepositoryTest]: CustomerInvoiceRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:58:02.622-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.datalayer.CustomerInvoiceRepositoryTest
-2024-02-14T23:58:02.633-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+<pre>2024-02-15T02:21:17.328-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.datalayer.CustomerInvoiceRepositoryTest]: CustomerInvoiceRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:17.358-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.datalayer.CustomerInvoiceRepositoryTest
+2024-02-15T02:21:17.371-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.639-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.388-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
-2024-02-14T23:58:02.650-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+2024-02-15T02:21:17.398-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.658-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
+2024-02-15T02:21:17.405-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
-2024-02-14T23:58:02.661-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.408-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
-2024-02-14T23:58:02.671-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+2024-02-15T02:21:17.415-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.676-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
+2024-02-15T02:21:17.420-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
-2024-02-14T23:58:02.679-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.423-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
-2024-02-14T23:58:02.688-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+2024-02-15T02:21:17.430-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.694-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.434-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
-2024-02-14T23:58:02.701-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+2024-02-15T02:21:17.442-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.706-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
+2024-02-15T02:21:17.446-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.user_id=?
-2024-02-14T23:58:02.710-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.449-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
-2024-02-14T23:58:02.717-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
+2024-02-15T02:21:17.458-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
 Hibernate: insert into invoices (appointment_id,user_id,invoice_id,invoice_date,mechanic_notes,sum_of_services,id) values (?,?,?,?,?,?,default)
-2024-02-14T23:58:02.723-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
+2024-02-15T02:21:17.464-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0 where c1_0.invoice_id=?
-2024-02-14T23:58:02.726-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
+2024-02-15T02:21:17.468-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.invoice_date,c1_0.mechanic_notes,c1_0.sum_of_services from invoices c1_0
 </pre>
 </span>
@@ -157,7 +157,7 @@ Hibernate: select c1_0.id,c1_0.appointment_id,c1_0.user_id,c1_0.invoice_id,c1_0.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 15, 2024, 2:21:34 AM</p>
 </div>
 </div>
 </body>

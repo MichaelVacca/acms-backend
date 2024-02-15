@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.062s</div>
+<div class="counter">0.057s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">findReviewByReviewId_nonExistentId_shouldReturnNull()</td>
-<td class="success">0.017s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findReviewByReviewId_shouldSucceed()</td>
-<td class="success">0.017s</td>
+<td class="success">0.019s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@
 </tr>
 <tr>
 <td class="success">testRequestModelToEntityMapping()</td>
-<td class="success">0.014s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,29 +102,29 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-02-14T23:58:05.317-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.reviewssubdomain.datalayer.ReviewRepositoryTest]: ReviewRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:58:05.360-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.reviewssubdomain.datalayer.ReviewRepositoryTest
-2024-02-14T23:58:05.369-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
+<pre>2024-02-15T02:21:25.956-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.reviewssubdomain.datalayer.ReviewRepositoryTest]: ReviewRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:26.004-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.reviewssubdomain.datalayer.ReviewRepositoryTest
+2024-02-15T02:21:26.012-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:58:05.371-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:21:26.016-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:58:05.375-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
+2024-02-15T02:21:26.019-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
-2024-02-14T23:58:05.384-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:21:26.025-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:58:05.391-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
+2024-02-15T02:21:26.031-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
-2024-02-14T23:58:05.399-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:21:26.037-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:58:05.404-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
+2024-02-15T02:21:26.042-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
-2024-02-14T23:58:05.408-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
+2024-02-15T02:21:26.045-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
-2024-02-14T23:58:05.418-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
+2024-02-15T02:21:26.050-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
 Hibernate: insert into reviews (appointment_id,comment,user_id,mechanic_reply,rating,review_date,review_id,id) values (?,?,?,?,?,?,?,default)
-2024-02-14T23:58:05.424-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
+2024-02-15T02:21:26.061-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0 where r1_0.review_id=?
-2024-02-14T23:58:05.428-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
+2024-02-15T02:21:26.064-05:00 DEBUG 20292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
 Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mechanic_reply,r1_0.rating,r1_0.review_date,r1_0.review_id from reviews r1_0
 </pre>
 </span>
@@ -137,7 +137,7 @@ Hibernate: select r1_0.id,r1_0.appointment_id,r1_0.comment,r1_0.user_id,r1_0.mec
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 15, 2024, 2:21:34 AM</p>
 </div>
 </div>
 </body>

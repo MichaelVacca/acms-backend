@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.074s</div>
+<div class="counter">0.050s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,32 +84,32 @@
 </tr>
 <tr>
 <td class="success">addInvoiceToCustomerAccount_shouldSucceed()</td>
-<td class="success">0.013s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">deleteInvoiceByInvoiceId_invoiceNotFound()</td>
-<td class="success">0.005s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">deleteInvoiceByInvoiceId_shouldSucceed()</td>
-<td class="success">0.005s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllCustomerInvoices_shouldSucceed()</td>
-<td class="success">0.005s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllInvoicesByCustomerId_noAppointments_shouldReturnEmptyList()</td>
-<td class="success">0.006s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllInvoicesByCustomerId_shouldReturnInvoiceResponseModelList()</td>
-<td class="success">0.006s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -119,17 +119,17 @@
 </tr>
 <tr>
 <td class="success">getInvoiceById_shouldReturnInvoiceDetails()</td>
-<td class="success">0.011s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">getInvoiceById_whenInvoiceNotFound_shouldReturnNull()</td>
 <td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">getInvoiceById_whenInvoiceNotFound_shouldReturnNull()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">updateCustomerInvoice_shouldSucceed()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -137,18 +137,18 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-02-14T23:58:02.286-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest]: CustomerInvoiceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:58:02.312-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest
-2024-02-14T23:58:02.481-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: someCustomerId
-2024-02-14T23:58:02.481-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoices found for customer ID: someCustomerId (invoices list is empty)
-2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
-2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
-2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Mapping successful. Number of InvoiceResponseModels: 1
-2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
-2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
-2024-02-14T23:58:02.537-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : InvoiceResponseModels is null after mapping
-2024-02-14T23:58:02.546-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Customer account not found for customer ID: nonExistentCustomerId
-2024-02-14T23:58:02.561-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoice found for invoice ID: non-existent-invoice-id
+<pre>2024-02-15T02:21:17.085-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest]: CustomerInvoiceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:17.110-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest
+2024-02-15T02:21:17.257-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: someCustomerId
+2024-02-15T02:21:17.257-05:00  WARN 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoices found for customer ID: someCustomerId (invoices list is empty)
+2024-02-15T02:21:17.280-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-15T02:21:17.280-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-15T02:21:17.280-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Mapping successful. Number of InvoiceResponseModels: 1
+2024-02-15T02:21:17.292-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-15T02:21:17.292-05:00  INFO 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-15T02:21:17.293-05:00  WARN 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : InvoiceResponseModels is null after mapping
+2024-02-15T02:21:17.301-05:00  WARN 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Customer account not found for customer ID: nonExistentCustomerId
+2024-02-15T02:21:17.311-05:00  WARN 20292 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoice found for invoice ID: non-existent-invoice-id
 </pre>
 </span>
 </div>
@@ -160,7 +160,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 15, 2024, 2:21:34 AM</p>
 </div>
 </div>
 </body>

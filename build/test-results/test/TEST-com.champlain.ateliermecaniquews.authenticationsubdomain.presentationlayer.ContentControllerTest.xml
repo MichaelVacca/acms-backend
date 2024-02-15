@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2024-02-15T04:58:00" hostname="LAPTOP-C5ATL8TE" time="0.151">
+<testsuite name="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2024-02-15T07:21:09" hostname="LAPTOP-C5ATL8TE" time="0.142">
   <properties/>
-  <testcase name="allAccess()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.044"/>
-  <testcase name="shouldReturnUnauthorizedResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.055">
+  <testcase name="allAccess()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.043"/>
+  <testcase name="shouldReturnUnauthorizedResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.044">
     <failure message="java.lang.AssertionError: Status expected:&lt;401&gt; but was:&lt;403&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Status expected:&lt;401&gt; but was:&lt;403&gt;
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
@@ -95,12 +95,12 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="adminAccessAsAdmin()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.014"/>
+  <testcase name="adminAccessAsAdmin()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.013"/>
   <testcase name="userAccessAsAdmin()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.01"/>
-  <testcase name="userAccessAsCustomer()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.009"/>
-  <testcase name="adminAccessAsCustomerShouldReturnForbidden()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.011"/>
-  <system-out><![CDATA[2024-02-14T23:57:57.015-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest]: ContentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:57:57.069-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest
+  <testcase name="userAccessAsCustomer()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.011"/>
+  <testcase name="adminAccessAsCustomerShouldReturnForbidden()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest" time="0.014"/>
+  <system-out><![CDATA[2024-02-15T02:21:05.556-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest]: ContentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:05.593-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.ContentControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -110,7 +110,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.5)
 
-2024-02-14T23:57:57.175-05:00  WARN 37760 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2024-02-15T02:21:05.651-05:00  WARN 20292 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -119,210 +119,36 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2024-02-14T23:57:57.178-05:00  INFO 37760 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Starting ContentControllerTest using Java 17.0.6 with PID 37760 (started by Mvacc in C:\Users\Mvacc\OneDrive\Documents\Semester8\FINALPROJ\ateliermecanique-ws\ateliermecanique-ws)
-2024-02-14T23:57:57.178-05:00 DEBUG 37760 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Running with Spring Boot v3.1.5, Spring v6.0.13
-2024-02-14T23:57:57.178-05:00  INFO 37760 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : No active profile set, falling back to 1 default profile: "default"
-2024-02-14T23:57:57.798-05:00  INFO 37760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-14T23:57:57.896-05:00  INFO 37760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 6 JPA repository interfaces.
-2024-02-14T23:57:58.333-05:00  INFO 37760 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-02-14T23:57:58.337-05:00  INFO 37760 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn33: url=jdbc:h2:mem:b4756825-3367-4f35-a7a9-9981d8556075 user=SA
-2024-02-14T23:57:58.338-05:00  INFO 37760 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2024-02-14T23:57:58.344-05:00  INFO 37760 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-14T23:57:58.371-05:00  INFO 37760 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-14T23:57:58.683-05:00  INFO 37760 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-14T23:57:58.684-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists appointments cascade 
-2024-02-14T23:57:58.685-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists invoices cascade 
-2024-02-14T23:57:58.685-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists reviews cascade 
-2024-02-14T23:57:58.685-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists roles cascade 
-2024-02-14T23:57:58.686-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists user_roles cascade 
-2024-02-14T23:57:58.686-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists users cascade 
-2024-02-14T23:57:58.686-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : drop table if exists vehicles cascade 
-2024-02-14T23:57:58.686-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table appointments (id integer generated by default as identity, appointment_date timestamp(6), appointment_id varchar(255), comments varchar(255), services varchar(255), status varchar(255) check (status in ('PENDING','CONFIRMED','COMPLETED','CANCELLED')), user_id varchar(255), vehicle_id varchar(255), primary key (id))
-2024-02-14T23:57:58.688-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table invoices (id integer generated by default as identity, sum_of_services float(53), invoice_date timestamp(6), appointment_id varchar(255), invoice_id varchar(255), mechanic_notes varchar(255), user_id varchar(255), primary key (id))
-2024-02-14T23:57:58.689-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id integer generated by default as identity, rating float(53), review_date timestamp(6), appointment_id varchar(255), comment varchar(255), mechanic_reply varchar(255), review_id varchar(255), user_id varchar(255), primary key (id))
-2024-02-14T23:57:58.691-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table roles (id integer generated by default as identity, name varchar(20) check (name in ('ROLE_CUSTOMER','ROLE_ADMIN')), primary key (id))
-2024-02-14T23:57:58.692-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table user_roles (role_id integer not null, user_id integer not null, primary key (role_id, user_id))
-2024-02-14T23:57:58.694-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table users (id integer generated by default as identity, first_name varchar(20), phone_number varchar(20), last_name varchar(40), email varchar(50), password varchar(120), picture varchar(200), user_id varchar(255), primary key (id), constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email))
-2024-02-14T23:57:58.696-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))
-2024-02-14T23:57:58.696-05:00  WARN 37760 --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier";]
-
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id))" via JDBC [Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier";]
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:419) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1458) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.13.jar:6.0.13]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.13.jar:6.0.13]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.13.jar:6.0.13]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.13.jar:6.0.13]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.13.jar:6.0.13]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1166) ~[spring-context-6.0.13.jar:6.0.13]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:940) ~[spring-context-6.0.13.jar:6.0.13]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.0.13.jar:6.0.13]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar:3.1.5]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar:3.1.5]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar:3.1.5]
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.5.jar:3.1.5]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.0.13.jar:6.0.13]
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.0.13.jar:6.0.13]
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1406) ~[spring-boot-3.1.5.jar:3.1.5]
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545) ~[spring-boot-test-3.1.5.jar:3.1.5]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.1.5.jar:3.1.5]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.1.5.jar:3.1.5]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-6.0.13.jar:6.0.13]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.3.jar:5.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.3.jar:1.9.3]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
-	at jdk.proxy2/jdk.proxy2.$Proxy5.stop(Unknown Source) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), [*]year varchar(255), primary key (id))"; expected "identifier"; SQL statement:
-create table vehicles (id integer generated by default as identity, make varchar(255), mileage varchar(255), model varchar(255), transmission_type varchar(255) check (transmission_type in ('MANUAL','AUTOMATIC')), user_id varchar(255), vehicle_id varchar(255), year varchar(255), primary key (id)) [42001-214]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.readIdentifier(Parser.java:5656) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:9326) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parseCreateTable(Parser.java:9271) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parseCreate(Parser.java:6784) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parsePrepared(Parser.java:763) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parse(Parser.java:689) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.parse(Parser.java:661) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.command.Parser.prepareCommand(Parser.java:569) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237) ~[h2-2.1.214.jar:2.1.214]
-	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223) ~[h2-2.1.214.jar:2.1.214]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
-	... 131 common frames omitted
-
-2024-02-14T23:57:58.708-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
-2024-02-14T23:57:58.710-05:00 DEBUG 37760 --- [    Test worker] org.hibernate.SQL                        : alter table if exists user_roles add constraint FKhfh9dx7w3ubf1co1vdev94g3f foreign key (user_id) references users
-2024-02-14T23:57:58.716-05:00  INFO 37760 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-14T23:57:59.450-05:00  WARN 37760 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-14T23:57:59.496-05:00  INFO 37760 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12fa0f93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bef95b3, org.springframework.security.web.context.SecurityContextHolderFilter@2d4d2d55, org.springframework.security.web.header.HeaderWriterFilter@2e79cc2e, org.springframework.web.filter.CorsFilter@5b4d5437, org.springframework.security.web.authentication.logout.LogoutFilter@1b91cbb, com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.AuthTokenFilter@5a2a1620, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a838558, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25a206e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b561906, org.springframework.security.web.access.ExceptionTranslationFilter@6f6c0856, org.springframework.security.web.access.intercept.AuthorizationFilter@28645b5]
-2024-02-14T23:58:00.007-05:00  INFO 37760 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-02-14T23:58:00.007-05:00  INFO 37760 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-02-14T23:58:00.010-05:00  INFO 37760 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2024-02-14T23:58:00.028-05:00  INFO 37760 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Started ContentControllerTest in 2.949 seconds (process running for 30.345)
-2024-02-14T23:58:00.041-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-02-14T23:58:00.063-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=UserDetailsImpl(id=null, userId=9442b6dd-c413-4efd-b8f9-8d25f200bcc6, email=john.doe@example.com, firstName=John, lastName=Doe, phoneNumber=null, password=null, authorities=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]] to HttpSession [org.springframework.mock.web.MockHttpSession@64a62a3b]
-2024-02-14T23:58:00.063-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/all
-2024-02-14T23:58:00.064-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/all
-2024-02-14T23:58:00.074-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=UserDetailsImpl(id=null, userId=9442b6dd-c413-4efd-b8f9-8d25f200bcc6, email=john.doe@example.com, firstName=John, lastName=Doe, phoneNumber=null, password=null, authorities=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]]
-2024-02-14T23:58:00.082-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
-2024-02-14T23:58:00.083-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
-2024-02-14T23:58:00.084-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.089-05:00 DEBUG 37760 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-02-14T23:58:00.096-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@5e95b456 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN')]
-2024-02-14T23:58:00.118-05:00 DEBUG 37760 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost/api/v1/content/admin?continue to session
-2024-02-14T23:58:00.118-05:00 DEBUG 37760 --- [    Test worker] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-02-15T02:21:05.653-05:00  INFO 20292 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Starting ContentControllerTest using Java 17.0.6 with PID 20292 (started by Mvacc in C:\Users\Mvacc\OneDrive\Documents\Semester8\FINALPROJ\TEST\ateliermecanique-ws)
+2024-02-15T02:21:05.653-05:00 DEBUG 20292 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-02-15T02:21:05.653-05:00  INFO 20292 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T02:21:06.106-05:00  INFO 20292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T02:21:06.185-05:00  INFO 20292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2024-02-15T02:21:06.408-05:00  INFO 20292 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T02:21:06.434-05:00  INFO 20292 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T02:21:06.437-05:00  INFO 20292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-02-15T02:21:07.013-05:00  INFO 20292 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@83757fc
+2024-02-15T02:21:07.014-05:00  INFO 20292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-02-15T02:21:07.301-05:00  INFO 20292 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15T02:21:08.156-05:00  INFO 20292 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T02:21:08.578-05:00  WARN 20292 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T02:21:08.606-05:00  INFO 20292 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b0686a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40503ea6, org.springframework.security.web.context.SecurityContextHolderFilter@789a81ee, org.springframework.security.web.header.HeaderWriterFilter@3cfe0d76, org.springframework.web.filter.CorsFilter@1601179c, org.springframework.security.web.authentication.logout.LogoutFilter@4b3c182a, com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.AuthTokenFilter@16fcd2c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ce129f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b5c5d65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fefdbd5, org.springframework.security.web.access.ExceptionTranslationFilter@1e0db50, org.springframework.security.web.access.intercept.AuthorizationFilter@2749d9d0]
+2024-02-15T02:21:08.982-05:00  INFO 20292 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-02-15T02:21:08.982-05:00  INFO 20292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-15T02:21:08.983-05:00  INFO 20292 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-02-15T02:21:08.997-05:00  INFO 20292 --- [    Test worker] c.c.a.a.p.ContentControllerTest          : Started ContentControllerTest in 3.396 seconds (process running for 69.18)
+2024-02-15T02:21:09.008-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-15T02:21:09.028-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=UserDetailsImpl(id=null, userId=b922fdd4-a59a-473c-a9c1-8c130ff0aaa0, email=john.doe@example.com, firstName=John, lastName=Doe, phoneNumber=null, password=null, authorities=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]] to HttpSession [org.springframework.mock.web.MockHttpSession@602ef571]
+2024-02-15T02:21:09.029-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/all
+2024-02-15T02:21:09.030-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/all
+2024-02-15T02:21:09.039-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=UserDetailsImpl(id=null, userId=b922fdd4-a59a-473c-a9c1-8c130ff0aaa0, email=john.doe@example.com, firstName=John, lastName=Doe, phoneNumber=null, password=null, authorities=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]]
+2024-02-15T02:21:09.051-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
+2024-02-15T02:21:09.052-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
+2024-02-15T02:21:09.053-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.060-05:00 DEBUG 20292 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-02-15T02:21:09.066-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@4f60d58f and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN')]
+2024-02-15T02:21:09.079-05:00 DEBUG 20292 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost/api/v1/content/admin?continue to session
+2024-02-15T02:21:09.080-05:00 DEBUG 20292 --- [    Test worker] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -360,35 +186,35 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2024-02-14T23:58:00.142-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-02-14T23:58:00.143-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@66fee49f]
-2024-02-14T23:58:00.143-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
-2024-02-14T23:58:00.143-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
-2024-02-14T23:58:00.144-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.146-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
-2024-02-14T23:58:00.147-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.157-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-02-14T23:58:00.157-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@438f3437]
-2024-02-14T23:58:00.158-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/user
-2024-02-14T23:58:00.158-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/user
-2024-02-14T23:58:00.159-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.159-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
-2024-02-14T23:58:00.160-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.169-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-02-14T23:58:00.169-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@398c1a7]
-2024-02-14T23:58:00.169-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/user
-2024-02-14T23:58:00.170-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/user
-2024-02-14T23:58:00.170-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.170-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]]
-2024-02-14T23:58:00.170-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.178-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-02-14T23:58:00.178-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@70ad4625]
-2024-02-14T23:58:00.178-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
-2024-02-14T23:58:00.179-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
-2024-02-14T23:58:00.179-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
-2024-02-14T23:58:00.180-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]]
-2024-02-14T23:58:00.180-05:00 DEBUG 37760 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@5e95b456 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN')]
-2024-02-14T23:58:00.182-05:00 DEBUG 37760 --- [    Test worker] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2024-02-15T02:21:09.099-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-15T02:21:09.099-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@6133ea2e]
+2024-02-15T02:21:09.100-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
+2024-02-15T02:21:09.100-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
+2024-02-15T02:21:09.101-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.102-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-15T02:21:09.102-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.111-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-15T02:21:09.111-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@27c832dd]
+2024-02-15T02:21:09.111-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/user
+2024-02-15T02:21:09.112-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/user
+2024-02-15T02:21:09.113-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.113-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-15T02:21:09.114-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.123-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-15T02:21:09.124-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@7589c8b8]
+2024-02-15T02:21:09.124-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/user
+2024-02-15T02:21:09.124-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/user
+2024-02-15T02:21:09.125-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.126-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]]
+2024-02-15T02:21:09.126-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.userAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.136-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-15T02:21:09.136-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@500aec06]
+2024-02-15T02:21:09.136-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/content/admin
+2024-02-15T02:21:09.137-05:00 DEBUG 20292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/content/admin
+2024-02-15T02:21:09.138-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController]
+2024-02-15T02:21:09.139-05:00 DEBUG 20292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_CUSTOMER]]]
+2024-02-15T02:21:09.140-05:00 DEBUG 20292 --- [    Test worker] horizationManagerBeforeMethodInterceptor : Failed to authorize ReflectiveMethodInvocation: public java.lang.String com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController.adminAccess(); target is of class [com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.controllers.ContentController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@4f60d58f and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN')]
+2024-02-15T02:21:09.142-05:00 DEBUG 20292 --- [    Test worker] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

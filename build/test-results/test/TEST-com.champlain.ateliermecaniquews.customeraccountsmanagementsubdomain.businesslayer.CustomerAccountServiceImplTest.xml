@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:58:00" hostname="LAPTOP-C5ATL8TE" time="0.071">
+<testsuite name="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-02-15T07:21:09" hostname="LAPTOP-C5ATL8TE" time="0.051">
   <properties/>
-  <testcase name="getCustomerAccountByCustomerId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.013"/>
+  <testcase name="getCustomerAccountByCustomerId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.006"/>
   <testcase name="deleteCustomerAccountAndVehiclesByCustomerId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.005"/>
-  <testcase name="updateCustomerAccountByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.008"/>
-  <testcase name="getCustomerAccountByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.006"/>
-  <testcase name="deleteCustomerAccountAndVehiclesByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.006"/>
-  <testcase name="getAllCustomerAccounts_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.009"/>
-  <testcase name="updateCustomerAccountByCustomerId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.007"/>
-  <system-out><![CDATA[2024-02-14T23:58:00.889-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest]: CustomerAccountServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:58:00.920-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest
+  <testcase name="updateCustomerAccountByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.006"/>
+  <testcase name="getCustomerAccountByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.005"/>
+  <testcase name="deleteCustomerAccountAndVehiclesByInvalidCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.004"/>
+  <testcase name="getAllCustomerAccounts_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.006"/>
+  <testcase name="updateCustomerAccountByCustomerId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest" time="0.005"/>
+  <system-out><![CDATA[2024-02-15T02:21:09.817-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest]: CustomerAccountServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:09.844-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.businesslayer.CustomerAccountServiceImplTest
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

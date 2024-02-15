@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.072s</div>
+<div class="counter">0.069s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">addVehicleToCustomerAccount_shouldSucceed()</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addVehicleToInvalidCustomerAccount_shouldReturnNull()</td>
-<td class="success">0.005s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">deleteAllVehiclesByCustomerId_shouldSucceed()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -104,22 +104,22 @@
 </tr>
 <tr>
 <td class="success">getAllVehiclesByCustomerId_noVehicles_shouldReturnEmptyList()</td>
-<td class="success">0.004s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllVehiclesByCustomerId_shouldReturnNull()</td>
-<td class="success">0.005s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllVehiclesByCustomerId_shouldReturnVehicleResponseModelList()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getVehicleByInvalidVehicleId_shouldReturnNull()</td>
-<td class="success">0.003s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,17 +129,17 @@
 </tr>
 <tr>
 <td class="success">testEntityToResponseModel()</td>
-<td class="success">0.006s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEntityToResponseModelList()</td>
-<td class="success">0.003s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testRequestModelToEntity()</td>
-<td class="success">0.005s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@
 </tr>
 <tr>
 <td class="success">updateVehicleByVehicleId_shouldSucceed()</td>
-<td class="success">0.004s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -162,18 +162,18 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-02-14T23:58:07.060-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.businesslayer.VehicleServiceImplTest]: VehicleServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-14T23:58:07.089-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.businesslayer.VehicleServiceImplTest
-2024-02-14T23:58:07.269-05:00  WARN 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : No vehicle found for customer ID: com.champlain.ateliermecaniquews.authenticationsubdomain.dataLayer.UserIdentifier@616e5f84 and vehicle ID: com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.datalayer.VehicleIdentifier@6c052730 (vehicle is null)
-2024-02-14T23:58:07.275-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: someuserId
-2024-02-14T23:58:07.275-05:00  WARN 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : No vehicles found for customer ID: someuserId (vehicles list is empty)
-2024-02-14T23:58:07.287-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: testuserId
-2024-02-14T23:58:07.287-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Number of vehicles found for customer ID testuserId: 1
-2024-02-14T23:58:07.288-05:00  WARN 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : VehicleResponseModels is null after mapping
-2024-02-14T23:58:07.321-05:00  WARN 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : User not found for customer ID: nonExistingCustomerId
-2024-02-14T23:58:07.348-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: testCustomerId
-2024-02-14T23:58:07.348-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Number of vehicles found for customer ID testCustomerId: 1
-2024-02-14T23:58:07.348-05:00  INFO 37760 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Mapping successful. Number of VehicleResponseModels: 1
+<pre>2024-02-15T02:21:29.221-05:00  INFO 20292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.businesslayer.VehicleServiceImplTest]: VehicleServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-15T02:21:29.243-05:00  INFO 20292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.businesslayer.VehicleServiceImplTest
+2024-02-15T02:21:29.408-05:00  WARN 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : No vehicle found for customer ID: com.champlain.ateliermecaniquews.authenticationsubdomain.dataLayer.UserIdentifier@63bd9b9e and vehicle ID: com.champlain.ateliermecaniquews.vehiclemanagementsubdomain.datalayer.VehicleIdentifier@3b440deb (vehicle is null)
+2024-02-15T02:21:29.413-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: someuserId
+2024-02-15T02:21:29.414-05:00  WARN 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : No vehicles found for customer ID: someuserId (vehicles list is empty)
+2024-02-15T02:21:29.424-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: testuserId
+2024-02-15T02:21:29.424-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Number of vehicles found for customer ID testuserId: 1
+2024-02-15T02:21:29.424-05:00  WARN 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : VehicleResponseModels is null after mapping
+2024-02-15T02:21:29.452-05:00  WARN 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : User not found for customer ID: nonExistingCustomerId
+2024-02-15T02:21:29.476-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Fetching vehicles for customer ID: testCustomerId
+2024-02-15T02:21:29.476-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Number of vehicles found for customer ID testCustomerId: 1
+2024-02-15T02:21:29.477-05:00  INFO 20292 --- [    Test worker] c.c.a.v.b.VehicleServiceImpl             : Mapping successful. Number of VehicleResponseModels: 1
 </pre>
 </span>
 </div>
@@ -185,7 +185,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 15, 2024, 2:21:34 AM</p>
 </div>
 </div>
 </body>
