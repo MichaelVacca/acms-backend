@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CustomerInvoiceServiceImplTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CustomerInvoiceServiceImplTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.html">com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer</a> &gt; CustomerInvoiceServiceImplTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.074s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addInvoiceToCustomerAccount_CustomerNotFound_shouldReturnNull()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addInvoiceToCustomerAccount_shouldSucceed()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteInvoiceByInvoiceId_invoiceNotFound()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteInvoiceByInvoiceId_shouldSucceed()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllCustomerInvoices_shouldSucceed()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllInvoicesByCustomerId_noAppointments_shouldReturnEmptyList()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllInvoicesByCustomerId_shouldReturnInvoiceResponseModelList()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllInvoicesByCustomerId_shouldReturnNull()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getInvoiceById_shouldReturnInvoiceDetails()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getInvoiceById_whenInvoiceNotFound_shouldReturnNull()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCustomerInvoice_shouldSucceed()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-02-14T23:58:02.286-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest]: CustomerInvoiceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-14T23:58:02.312-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest
+2024-02-14T23:58:02.481-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: someCustomerId
+2024-02-14T23:58:02.481-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoices found for customer ID: someCustomerId (invoices list is empty)
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Mapping successful. Number of InvoiceResponseModels: 1
+2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-14T23:58:02.537-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : InvoiceResponseModels is null after mapping
+2024-02-14T23:58:02.546-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Customer account not found for customer ID: nonExistentCustomerId
+2024-02-14T23:58:02.561-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoice found for invoice ID: non-existent-invoice-id
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+</div>
+</div>
+</body>
+</html>

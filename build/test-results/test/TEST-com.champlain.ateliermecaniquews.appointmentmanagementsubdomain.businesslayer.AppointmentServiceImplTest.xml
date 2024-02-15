@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:57:48" hostname="LAPTOP-C5ATL8TE" time="0.48">
+  <properties/>
+  <testcase name="getAllAppointmentsByCustomerId_shouldReturnAppointmentResponseModelList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.207"/>
+  <testcase name="getAllAppointments_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.013"/>
+  <testcase name="updateAppointmentByAppointmentId_shouldUpdateSuccessfully()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.044"/>
+  <testcase name="getAppointmentByAppointmentId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.01"/>
+  <testcase name="getAllAppointmentsByCustomerId_noAppointments_shouldReturnEmptyList()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.017"/>
+  <testcase name="deleteAppointmentByAppointmentId_appointmentNotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.008"/>
+  <testcase name="updateAppointmentStatus_saveFails_shouldThrowException()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.022"/>
+  <testcase name="deleteAppointmentByAppointmentId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.007"/>
+  <testcase name="updateAppointmentStatus_shouldConfirmAppointment()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.012"/>
+  <testcase name="updateAppointmentStatus_shouldCancelAppointment()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.011"/>
+  <testcase name="deleteAllCancelledAppointments_noCancelledAppointments_shouldNotDelete()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.007"/>
+  <testcase name="addAppointmentToCustomerAccount_ShouldAddAppointment()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.008"/>
+  <testcase name="getAppointmentByAppointmentId_whenNotFound_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.011"/>
+  <testcase name="getAllAppointmentsByCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.008"/>
+  <testcase name="deleteAllCancelledAppointments_shouldSucceed()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.006"/>
+  <testcase name="checkTimeSlotAvailability_ShouldReturnCorrectAvailability()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.006"/>
+  <testcase name="updateAppointmentByAppointmentId_whenNotFound_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest" time="0.005"/>
+  <system-out><![CDATA[2024-02-14T23:57:47.505-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest]: AppointmentServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-14T23:57:47.527-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.businesslayer.AppointmentServiceImplTest
+2024-02-14T23:57:48.432-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Fetching appointments for customer ID: testCustomerId
+2024-02-14T23:57:48.432-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Number of appointments found for customer ID testCustomerId: 1
+2024-02-14T23:57:48.433-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Mapping successful. Number of AppointmentResponseModels: 1
+2024-02-14T23:57:48.593-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Fetching appointments for customer ID: someCustomerId
+2024-02-14T23:57:48.594-05:00  WARN 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : No appointments found for customer ID: someCustomerId (appointments list is empty)
+2024-02-14T23:57:48.727-05:00  WARN 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : No appointment found for appointment ID: non-existent-id
+2024-02-14T23:57:48.741-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Fetching appointments for customer ID: testCustomerId
+2024-02-14T23:57:48.741-05:00  INFO 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : Number of appointments found for customer ID testCustomerId: 1
+2024-02-14T23:57:48.741-05:00  WARN 37760 --- [    Test worker] c.c.a.a.b.AppointmentServiceImpl         : AppointmentResponseModels is null after mapping
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

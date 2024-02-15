@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:58:04" hostname="LAPTOP-C5ATL8TE" time="0.058">
+  <properties/>
+  <testcase name="testGetAllInvoicesAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.006"/>
+  <testcase name="testUpdateCustomerInvoice_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testDeleteCustomerInvoiceByCustomerInvoiceIdAdmin_Success()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.001"/>
+  <testcase name="testAddInvoiceToCustomerAccountCustomer_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testGetInvoiceById_Found_AdminRole()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.003"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testAddInvoiceToCustomerAccountAdmin()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testDeleteInvoiceByInvoiceIdCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.005"/>
+  <testcase name="testAddInvoiceToCustomerAccountAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateCustomerInvoice_Found()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testDeleteInvoiceByInvoiceIdCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testDeleteCustomerInvoiceByCustomerInvoiceIdAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.003"/>
+  <testcase name="testAddInvoiceToCustomerAccountCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testGetInvoiceById_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.001"/>
+  <testcase name="testGetAllInvoicesAdmin()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.003"/>
+  <testcase name="testGetAllInvoicesByCustomerId_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAllInvoicesByCustomerId_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAllInvoicesByCustomerId_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.presentationlayer.CustomerInvoiceControllerUnitTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

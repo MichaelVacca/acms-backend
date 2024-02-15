@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:57:56" hostname="LAPTOP-C5ATL8TE" time="0.35">
+  <properties/>
+  <testcase name="authenticateUser_WhenValidCredentials_ShouldReturnJwtResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.249"/>
+  <testcase name="registerUser_WhenValidSignupRequest_ShouldReturnSuccessMessage()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.07"/>
+  <testcase name="registerUser_WhenEmailAlreadyInUse_ShouldReturnBadRequest()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.004"/>
+  <testcase name="facebookToken_WhenValidToken_ShouldReturnJWTResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.005"/>
+  <testcase name="googleLogin_WhenValidTokenAndUserDoesNotExist_ShouldReturnJWTResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.005"/>
+  <testcase name="googleLogin_WhenValidTokenAndUserExists_ShouldReturnJWTResponse()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.005"/>
+  <testcase name="googleLogin_WhenExceptionThrown_ShouldReturnUnprocessableEntity()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.presentationlayer.AuthControllerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

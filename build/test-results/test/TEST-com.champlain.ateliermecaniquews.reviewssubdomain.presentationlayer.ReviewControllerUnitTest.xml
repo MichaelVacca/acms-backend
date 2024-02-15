@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:58:07" hostname="LAPTOP-C5ATL8TE" time="0.014">
+  <properties/>
+  <testcase name="getReviewById_shouldReturnReview()" classname="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" time="0.002"/>
+  <testcase name="getAllReviews_shouldReturnReviews()" classname="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" time="0.002"/>
+  <testcase name="getReviewById_notFound_shouldReturnNotFound()" classname="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" time="0.002"/>
+  <testcase name="updateReview_shouldReturnUpdatedReview()" classname="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" time="0.002"/>
+  <testcase name="getAllReviews_noReviewsFound_shouldReturnNotFound()" classname="com.champlain.ateliermecaniquews.reviewssubdomain.presentationlayer.ReviewControllerUnitTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

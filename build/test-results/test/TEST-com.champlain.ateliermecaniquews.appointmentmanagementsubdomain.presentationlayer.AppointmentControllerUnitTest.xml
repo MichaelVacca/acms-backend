@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:57:54" hostname="LAPTOP-C5ATL8TE" time="0.264">
+  <properties/>
+  <testcase name="testGetAllAppointmentsByCustomerId_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.17"/>
+  <testcase name="testGetAllAppointmentsByCustomerId_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testCheckTimeSlotAvailability_No_Content()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateAppointmentByAppointmentId_AdminRole_CustomerFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testUpdateAppointmentByAppointmentId_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testDeleteAppointmentByAppointmentIdCustomer_AdminRole_UserFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.004"/>
+  <testcase name="testDeleteAppointmentByAppointmentIdCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testDeleteAppointmentByAppointmentIdCustomer_AdminRole_UserNotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateAppointmentByAppointmentId_AdminRole_CustomerNotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateAppointmentStatusCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testAddAppointmentToCustomerAccountAdmin()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.001"/>
+  <testcase name="testDeleteAppointmentByAppointmentIdCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAppointmentByIdCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAppointmentByIdCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAllAppointmentsAdmin()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.001"/>
+  <testcase name="testUpdateAppointmentStatusCustomer_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_CustomerRole_AuthenticatedUserIdMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAppointmentByIdCustomer_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateAppointmentByAppointmentId_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_AdminRole_CustomerNotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testUpdateAppointmentByAppointmentId_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testGetAllAppointmentsAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testAddAppointmentToCustomerAccountCustomer_AdminRole_CustomerFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testGetAppointmentByIdAdmin()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.003"/>
+  <testcase name="testCheckTimeSlotAvailability()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAppointmentByIdAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.004"/>
+  <testcase name="testUpdateAppointmentStatusCustomer_CustomerRole_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.004"/>
+  <testcase name="testAddAppointmentToCustomerAccountAdmin_NotFound()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <testcase name="testGetAllAppointmentsByCustomerId_CustomerRole_AuthenticatedUserIdNotMatching()" classname="com.champlain.ateliermecaniquews.appointmentmanagementsubdomain.presentationlayer.AppointmentControllerUnitTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

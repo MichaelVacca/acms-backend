@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CustomerAccountControllerUnitTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CustomerAccountControllerUnitTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.presentationlayer.html">com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.presentationlayer</a> &gt; CustomerAccountControllerUnitTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.042s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllCustomerAccounts_noAccounts_shouldReturnNotFound()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllCustomerAccounts_shouldSucceed()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCustomerAccountByCustomerId_shouldSucceed()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCustomerAccountByInvalidCustomerId_shouldReturnNotFound()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCustomerAccountByCustomerId_shouldSucceed()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateCustomerAccountByInvalidCustomerId_shouldReturnNotFound()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-02-14T23:58:01.571-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.presentationlayer.CustomerAccountControllerUnitTest]: CustomerAccountControllerUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-14T23:58:01.583-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customeraccountsmanagementsubdomain.presentationlayer.CustomerAccountControllerUnitTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2024-02-14T23:58:01.633-05:00  WARN 37760 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Mvacc/.gradle/caches/modules-2/files-2.1/org.json/json/20230227/7a0d4aca76513d8ce81f9b044ce8126b84809ad8/json-20230227.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Mvacc/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-02-14T23:58:01.635-05:00  INFO 37760 --- [    Test worker] .a.c.p.CustomerAccountControllerUnitTest : Starting CustomerAccountControllerUnitTest using Java 17.0.6 with PID 37760 (started by Mvacc in C:\Users\Mvacc\OneDrive\Documents\Semester8\FINALPROJ\ateliermecanique-ws\ateliermecanique-ws)
+2024-02-14T23:58:01.635-05:00 DEBUG 37760 --- [    Test worker] .a.c.p.CustomerAccountControllerUnitTest : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-02-14T23:58:01.635-05:00  INFO 37760 --- [    Test worker] .a.c.p.CustomerAccountControllerUnitTest : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-02-14T23:58:02.146-05:00  WARN 37760 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7a93c5bb-0a70-452d-85dd-ea326a229c1d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-14T23:58:02.203-05:00  INFO 37760 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12241f94, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f714a81, org.springframework.security.web.context.SecurityContextHolderFilter@38e0982, org.springframework.security.web.header.HeaderWriterFilter@4dd773d8, org.springframework.security.web.csrf.CsrfFilter@6d66d76a, org.springframework.security.web.authentication.logout.LogoutFilter@2c786721, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28b6f113, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@45b6368d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7366663b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43f852d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5808531e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3309da87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7289cc5c, org.springframework.security.web.access.ExceptionTranslationFilter@4ade8f0, org.springframework.security.web.access.intercept.AuthorizationFilter@50730206]
+2024-02-14T23:58:02.215-05:00  INFO 37760 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-02-14T23:58:02.215-05:00  INFO 37760 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-02-14T23:58:02.216-05:00  INFO 37760 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-02-14T23:58:02.229-05:00  INFO 37760 --- [    Test worker] .a.c.p.CustomerAccountControllerUnitTest : Started CustomerAccountControllerUnitTest in 0.64 seconds (process running for 32.546)
+2024-02-14T23:58:02.236-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-14T23:58:02.237-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@466564cf]
+2024-02-14T23:58:02.237-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/customers/1
+2024-02-14T23:58:02.241-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-14T23:58:02.242-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/customers/1
+2024-02-14T23:58:02.254-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-14T23:58:02.254-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@4a3ba863]
+2024-02-14T23:58:02.254-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/customers/notGoodBuddy
+2024-02-14T23:58:02.255-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-14T23:58:02.255-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/customers/notGoodBuddy
+2024-02-14T23:58:02.261-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-14T23:58:02.261-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@621d6441]
+2024-02-14T23:58:02.262-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/customers
+2024-02-14T23:58:02.262-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-14T23:58:02.262-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/customers
+2024-02-14T23:58:02.272-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-02-14T23:58:02.273-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@695520be]
+2024-02-14T23:58:02.273-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/customers
+2024-02-14T23:58:02.273-05:00 DEBUG 37760 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin@example.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2024-02-14T23:58:02.273-05:00 DEBUG 37760 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/customers
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at Feb 14, 2024, 11:58:10 PM</p>
+</div>
+</div>
+</body>
+</html>

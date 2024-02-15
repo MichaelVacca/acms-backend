@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:58:00" hostname="LAPTOP-C5ATL8TE" time="0.215">
+  <properties/>
+  <testcase name="testGenerateJwtToken()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.175"/>
+  <testcase name="testGetEmailFromJwtTokenWithInvalidToken()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.005"/>
+  <testcase name="testExceptionMessage()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.004"/>
+  <testcase name="testGenerateJwtResponseForOAuth()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.01"/>
+  <testcase name="testGetEmailFromJwtToken()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.006"/>
+  <testcase name="testThrowException()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.004"/>
+  <testcase name="testValidateJwtTokenWithInvalidToken()" classname="com.champlain.ateliermecaniquews.authenticationsubdomain.utils.security.jwt.JwtTest" time="0.006"/>
+  <system-out><![CDATA[2024-02-14T23:58:00.884-05:00 ERROR 37760 --- [    Test worker] c.c.a.a.utils.security.jwt.JwtUtils      : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

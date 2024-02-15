@@ -1,0 +1,68 @@
+# Default Spring Profile
+server:
+  error:
+    include-message: always
+
+logging:
+  level:
+    root: INFO
+    com.champlain: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.security: DEBUG
+
+
+---
+# H2 Profile
+spring:
+  config:
+    activate:
+      on-profile: h2
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.H2Dialect
+      hbm2ddl.auto: create
+  sql:
+    init:
+      platform: h2
+      mode: always
+
+---
+# DOCKER Profile
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+  datasource:
+    url: jdbc:mysql://mysql1/ateliermecanique-db
+    username: user
+    password: pwd
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  sql:
+    init:
+      platform: mysql
+      mode: always
+
+server.port: 8080
+spring.datasource.hikari.initializationFailTimeout: 60000
+
+
+

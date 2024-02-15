@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-02-15T04:58:02" hostname="LAPTOP-C5ATL8TE" time="0.103">
+  <properties/>
+  <testcase name="getAllInvoicesByCustomerId_noAppointments_shouldReturnEmptyList()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.006"/>
+  <testcase name="getInvoiceById_shouldReturnInvoiceDetails()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.011"/>
+  <testcase name="updateCustomerInvoice_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.005"/>
+  <testcase name="getAllInvoicesByCustomerId_shouldReturnInvoiceResponseModelList()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.006"/>
+  <testcase name="deleteInvoiceByInvoiceId_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.005"/>
+  <testcase name="deleteInvoiceByInvoiceId_invoiceNotFound()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.005"/>
+  <testcase name="getAllInvoicesByCustomerId_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.004"/>
+  <testcase name="addInvoiceToCustomerAccount_CustomerNotFound_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.007"/>
+  <testcase name="getAllCustomerInvoices_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.005"/>
+  <testcase name="getInvoiceById_whenInvoiceNotFound_shouldReturnNull()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.007"/>
+  <testcase name="addInvoiceToCustomerAccount_shouldSucceed()" classname="com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest" time="0.013"/>
+  <system-out><![CDATA[2024-02-14T23:58:02.286-05:00  INFO 37760 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest]: CustomerInvoiceServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-14T23:58:02.312-05:00  INFO 37760 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.champlain.ateliermecaniquews.AteliermecaniqueWsApplication for test class com.champlain.ateliermecaniquews.customerinvoicemanagementsubdomain.businesslayer.CustomerInvoiceServiceImplTest
+2024-02-14T23:58:02.481-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: someCustomerId
+2024-02-14T23:58:02.481-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoices found for customer ID: someCustomerId (invoices list is empty)
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-14T23:58:02.513-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Mapping successful. Number of InvoiceResponseModels: 1
+2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Fetching invoices for customer ID: testCustomerId
+2024-02-14T23:58:02.537-05:00  INFO 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Number of invoices found for customer ID testCustomerId: 1
+2024-02-14T23:58:02.537-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : InvoiceResponseModels is null after mapping
+2024-02-14T23:58:02.546-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : Customer account not found for customer ID: nonExistentCustomerId
+2024-02-14T23:58:02.561-05:00  WARN 37760 --- [    Test worker] c.c.a.c.b.CustomerInvoiceServiceImpl     : No invoice found for invoice ID: non-existent-invoice-id
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
